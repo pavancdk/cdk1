@@ -1,0 +1,17 @@
+Data Structures
+Arrays-Random access,Static allocation,Index based access,use it when size is known
+Linked List-Sequential access,Dynamic allocation,first in first out,use it when lots of modification is required
+Stack-Sequential access,Dynamic memory alloction,Last in first out,used for parsing
+queue-Sequential access,Dynamic memory alloction,First in last out,easy to access data
+
+->
+
+1. Sequential Access / Random Access
+2. Static Allocation/Dynamic Allocation
+3. Policy for getting/putting numbers
+4. use of 
+--------------
+structures.txt
+
+----------------
+
