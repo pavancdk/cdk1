@@ -22,3 +22,18 @@ Stack : Stack follows last in first out approach.Insertion and deletion occur at
 Queue: Queue follows First in first out approach.Insertion is done at one end and Deletion is done at other end.
 tree:  A tree is a hierarchical data structure. It is used to store data in in heirarchy.first element or node is called Root.A treehas Root, parentNode, ChildNode, 	LeafNodes.example :Directory structure.
 Binary tree: It is a special type of tree where each node has only 2 child nodes(leftchild,rightchild).
+
+
+-------------------------------------------------------------------------------
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title><hr>Insert title here</hr></title>
+</head>
+<body>
+<p>Welcome</p>
+</body>
+</html>
