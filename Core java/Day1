@@ -1,0 +1,114 @@
+public class Assignment {
+	public static void main(String args[])
+	{
+		StudentManipulation sm= new StudentManipulation();
+		Student studs[]=sm.createStudents();
+		for(Student stu : studs){
+			stu.display();
+			System.out.println("--------------");
+		}
+		System.out.println("student with maximum marks is...");
+		sm.findMax(studs).display();
+	}
+}
+-------------------------------------------------------------------------------------------------------------
+public class BookStore {
+	public Book[] getBooks() {
+		Book books[] = new Book[5];
+		books[0] = new Book(1287, "The Light", "Scientific publishers", "Krishna", 2999);
+		books[1] = new Book(2231, "Pokemon", "Niantic publishers", "Ash", 1999);
+		books[2] = new Book(3167, "Energy", "Edison publishers", "Edison", 1599);
+		books[3] = new Book(2212, "Mr.Bean", "Cartoons publishers", "Jean", 999);
+		books[4] = new Book(1111, "Forms of Energy", "Edison publishers", "Edison", 1320);
+		return books;
+	}
+	public Book findBookById(Book books[], long Id) {
+		Book mybook = null;
+		for (Book book : books) {
+			if (book.getIsbn() == Id) {
+				mybook = book;
+				break;
+			}
+		}
+		return mybook;
+	}
+	public Book updateBook(Book books[], long Id, double price) {
+		Book mybook = null;
+		for (Book book : books) {
+			if (book.getIsbn() == Id) {
+				book.setPrice(price);
+				mybook = book;
+				break;
+			}
+		}
+		return mybook;
+	}
+}
+---------------------------------------------------------------------------------------------------------------------------------------
+public class Employee {
+	private	int empId;
+	private String empName;
+	public Employee(int empId, String empName) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+	}
+	public Employee() {
+		System.out.println("emp");
+		empId=0;
+		empName="name";
+	}
+	public void display()
+	{
+		System.out.println("Name : "+empName+" Id : "+empId);
+		
+	}
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public String getEmpName() {
+		return empName;
+	}
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	
+	
+	
+}-------------------------------------------------------------------------------------------
+public class Assignment1 {
+	public static void main(String args[]) {
+		BookStore mybookstore = new BookStore();
+		Book books[] = mybookstore.getBooks();
+		Book mybook;
+		for (Book book : books) {
+			book.display();
+			System.out.println("------------------");
+		}
+		long id = 128;
+		System.out.println("information of book with id " + id);
+		mybook=mybookstore.findBookById(books, id);
+		if(mybook==null)
+		{
+			System.out.println("book with id "+ id + " not found");
+		}
+		else
+		{
+			mybook.display();
+			System.out.println("--------------------");
+			System.out.println("information of book with id " + id + " after updating price is :");
+			mybookstore.updateBook(books, id, 999).display();
+		}
+	}
+  ---------------------------------------------------------------------------------------------
+  public class Sample {
+	public static void main(String[] args) {
+		Student stud =  new Student("Pavan", "tenth", 16, 86, 90, 87, 93);
+		stud.display();
+	}
+}
+----------------------------------------------------------------------------------------------------------------
+}
